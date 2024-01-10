@@ -1,0 +1,54 @@
+.ticket{
+    border: 2px solid var(--slate500);
+    color: var(--slate500);
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 14fr 14fr 14fr 14fr;
+    grid-template-rows: 14fr 14fr ;
+   row-gap: 1rem;
+   column-gap: 1rem;
+
+}
+.tour_item_1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  
+}
+.tour_item_2{
+    grid-column-start: 4;
+    grid-column-end: 5;
+  
+}
+.tour_item_6{
+    border: 2px solid var(--slate500);
+    color: var(--slate500);
+    border-radius: 5px;
+    width: 10rem;
+    height: 2rem;
+    /* grid-column-start: 4; */
+    /* grid-column-end: 5; */
+    justify-self: center;
+    
+}
+.tour_item_6:hover{
+  
+    color: var(--slate900);
+    background-color: var(--slate500);
+   
+    
+}
+@media (max-width: 640px) {
+    .ticket{
+        display: grid;
+        grid-template-columns: 14fr 14fr ;
+        grid-template-rows: 14fr 14fr ;
+    }
+    .tour_item_2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+      
+    }
+    
+    }

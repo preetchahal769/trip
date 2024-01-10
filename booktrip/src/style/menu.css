@@ -1,0 +1,32 @@
+.menu{
+  border: 2px solid white;
+  color: var(--slate500);
+  width: 95vw;
+  font-family: "General Sans", sans-serif;
+
+  /* padding-top: 2rem; */
+  position: absolute;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* text-align: center; */
+  /* overflow: hidden; */
+}
+.menu_header__section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+   
+}
+.menu_header__button {
+    position: relative;
+
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: var(--size-2xl);
+    
+    border: none;
+    background-color: var(--slate900);
+    color: var(--slate500);
+  }
+ 

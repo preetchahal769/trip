@@ -1,0 +1,57 @@
+.filter {
+  /* border: 2px solid white; */
+  color: var(--slate500);
+  max-width: 1124px;
+  font-family: "General Sans", sans-serif;
+  margin: auto;
+  /* padding-top: 2rem; */
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* CSS Styles for the filter input */
+.filter_input {
+    /* Add styles for the filter input */
+    margin-bottom: 1rem; /* Example margin */
+    font-size: 1rem; /* Example font size */
+  }
+  
+  /* CSS Styles for the filter input title */
+  .filter_input_title {
+    /* Add styles for the filter input title */
+    font-weight: bold; /* Example font weight */
+    color: var(--slate500); /* Example color */
+    margin-bottom: 1rem; 
+  }
+  
+ /* CSS Styles for the filter input box */
+.filter_input_box {
+    /* Add styles for the filter input box */
+    border: 1px solid var(--slate500); /* Example border */
+    padding: 0.8rem; /* Example padding */
+    border-radius: 8px; /* Example border radius */
+    width: 50rem; /* Example width */
+    color:var(--slate500);
+    margin-bottom: 1rem; 
+  }
+
+/* This block represents the styling for the filter button */
+.filter_button {
+    color: var(--slate500); /* Text color */
+    background-color: var(--slate600); /* Background color */
+    border: 2px solid var(--slate500); /* Border color */
+    padding: 0.5rem 1rem; /* Padding */
+    border-radius: 5px; /* Border radius */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s ease; /* Transition effect */
+    margin-top: 1rem; /* Margin top */
+    margin-bottom: 1rem; /* Margin bottom */
+    margin-right: 0.5rem; /* Margin right */
+  }
+
+/* This block represents the styling for the filter button when hovered */
+.filter_button:hover {
+  background-color: var(--slate500);
+  color: white; /* Changes the text color when the button is hovered */
+}

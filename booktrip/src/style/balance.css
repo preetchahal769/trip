@@ -1,0 +1,61 @@
+.balance {
+  /* border: 2px solid white; */
+  color: var(--slate500);
+  max-width: 1024px;
+  font-family: "General Sans", sans-serif;
+  margin: auto;
+  padding-top: 2rem;
+  position: relative;
+  text-align: center;
+}
+.bank_balance,
+.balance_ammount {
+  margin: auto;
+  font-size: var(--size-7xl);
+}
+.balance_ammount {
+  font-size: var(--size-5xl);
+  display: block;
+}
+.add_value {
+  background-color: var(--slate500);
+  border: none;
+  outline: none;
+  color: white;
+  height: var(--size-2xl);
+
+}
+.add_value::placeholder{
+    color: white;
+    font-family: "General Sans", sans-serif;
+    font-size: var(--size-xs);
+}
+.add_amount {
+position: absolute;
+
+    padding: 0;
+    height: auto;
+    width: var(--size-2xl);
+ 
+    border: none;
+    background-color:#2563eb;
+    color: var(--slate500);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+
+    .balance_ammount {
+        
+        font-size: var(--size-5xl);
+      }
+      .balance_ammount {
+        font-size: var(--size-3xl);
+       
+      }
+      
+  }

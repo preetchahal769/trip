@@ -1,0 +1,114 @@
+:root {
+  --slate800: #1e293b;
+  --slate500: #64748b;
+  --slate900: #020617;
+  --teal400: #2dd4bf;
+  --yellow300: #ffe048;
+  --bs-btn-color: #fff;
+    --bs-btn-bg: #0d6efd;
+    --bs-btn-border-color: #0d6efd;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0b5ed7;
+    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+
+
+  
+  /* sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+@keyframes loading {
+  0% {
+    transform: translateX(100%);
+  }
+  30% {
+    transform: translateX(-10%);
+  }
+  60% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: var(--slate900);
+}
+
+/* For webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--slate900);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--slate500);
+}
+
+/* You can use the `:root` selector to apply it globally */
+:root {
+  scrollbar-color: var(--slate500) var(--slate500);
+}
+
+/* Alternatively, you can target specific elements */
+/* For example, to target the body element */
+body {
+  scrollbar-color: var(--slate500) var(--slate500);
+}
+.custom-toast {
+  background-color: var(--slate900);
+  
+}
+.loading_animation {
+  animation: loading 1.5s ease-in;
+}
+
+
+
+.feedback{
+ display: none;
+}
+.invalid-feedback{
+ font-family: "General Sans", sans-serif;
+ font-size: 20%;
+  margin-top: -20%;
+  margin-bottom: -20%;
+  color: red;
+  display: block; 
+}
+.input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--slate900) inset !important;
+  -webkit-text-fill-color: var(--slate500) !important;
+  caret-color: var(--slate500) !important;
+}
+/* .regsiter{
+ position: relative;
+  z-index: 0;
+} */
