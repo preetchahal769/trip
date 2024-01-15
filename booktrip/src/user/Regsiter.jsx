@@ -3,6 +3,7 @@ import {
   viteLogo,
   axios,
   useNavigate,
+  useState,
   toast,
   yupResolver,
   useForm,
@@ -14,6 +15,8 @@ import "react-toastify/dist/ReactToastify.css";
 import "../style/regsiter.css";
 function Regsiter() {
   const navigate = useNavigate(); // Hook to handle navigation
+  const [isChecked, setIsChecked] = useState(false);
+  const [type, setType] = useState("password");
   const dispatch = useDispatch();
   const toastOptions = {
     className: "custom-toast",
@@ -26,7 +29,20 @@ function Regsiter() {
     progress: undefined,
     theme: "dark",
   };
+  const handleToggle = () => {
+    if (type === "password") {
+      setType("text");
+    } else {
+      setType("password");
+    }
+  };
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
 
+    handleToggle();
+
+    console.log(isChecked);
+  };
   const schema = Yup.object().shape({
     name: Yup.string()
       .min(3, "Name must be at least 3 characters")
@@ -62,8 +78,9 @@ function Regsiter() {
   });
 
   // Handle form submission
-  const onSubmit = async (e) => {
-    e.preventDefault();
+  const onSubmit = async (data) => {
+    console.log(data);
+    // e.preventDefault();
     try {
       if (input.password !== input.confirmPassword) {
         toast.error("Password don't match", toastOptions);
@@ -89,67 +106,135 @@ function Regsiter() {
           <h3 className="register_box_header_text ">Sign up to Book Trip</h3>
         </div>
         <div className="register_box_form loading_animation">
-          <from className="register_form">
+          <form className="register_form" onSubmit={handleSubmit(onSubmit)}>
             <div className="register_input_container">
               <label htmlFor="name" className="form_input_lable">
-                name
+                Name
               </label>
-              <input type="text" autocomplete="off" className="form_input_box" />
-              <div className="error">name required</div>
+              <input
+                type="text"
+                autoComplete="off"
+                name="name"
+                className="form_input_box"
+                {...register("name")}
+              />
+
+              {errors.name && (
+                <div className="error">{errors.name.message}</div>
+              )}
             </div>
             <div className="register_input_container">
               <label htmlFor="userName" className="form_input_lable">
                 Username
               </label>
-              <input type="text" autocomplete="off" className="form_input_box" />
-              <div className="error">username required</div>
+              <input
+                type="text"
+                autoComplete="off"
+                className="form_input_box"
+                {...register("userName")}
+              />
+              {errors.userName && (
+                <div className="error">{errors.userName.message}</div>
+              )}
             </div>
             <div className="register_input_container">
               <label htmlFor="Adress" className="form_input_lable">
                 City
               </label>
-              <input type="text" autocomplete="off" className="form_input_box input" />
-              <div className="error">City required</div>
+              <input
+                type="text"
+                autoComplete="off"
+                className="form_input_box input"
+                {...register("address")}
+              />
+              {errors.address && (
+                <div className="error">{errors.address.message}</div>
+              )}
             </div>
             <div className="register_input_container">
               <label htmlFor="phoneNo" className="form_input_lable">
                 Phone NO
               </label>
-              <input type="text" autocomplete="off" className="form_input_box" />
-              <div className="error">Phone NO required</div>
+              <input
+                type="text"
+                autoComplete="off"
+                className="form_input_box"
+                {...register("phoneNo")}
+              />
+              {errors.phoneNo && (
+                <div className="error">{errors.phoneNo.message}</div>
+              )}
             </div>
             <div className="register_input_container">
               <label htmlFor="email" className="form_input_lable">
                 Email
               </label>
-              <input type="text" autocomplete="off" className="form_input_box" />
-              <div className="error">name required</div>
+              <input
+                type="text"
+                autoComplete="off"
+                className="form_input_box"
+                {...register("email")}
+              />
+              {errors.email && (
+                <div className="error">{errors.email.message}</div>
+              )}
             </div>
             <div className="register_input_container">
               <label htmlFor="password" className="form_input_lable">
                 Password
               </label>
-              <input type="text" autocomplete="off" className="form_input_box" />
-              <div className="error">Password required</div>
+              <input
+                type={type}
+                autoComplete="off"
+                className="form_input_box"
+                {...register("password")}
+              />
+              {errors.password && (
+                <div className="error">{errors.password.message}</div>
+              )}
             </div>
             <div className="register_input_container">
               <label htmlFor="confirmPassword" className="form_input_lable">
                 Confirm Password
               </label>
-              <input type="text" autocomplete="off" className="form_input_box" />
-              <div className="error">password required</div>
+              <input
+                type={type}
+                autoComplete="off"
+                className="form_input_box"
+                {...register("confirmPassword")}
+              />
+              {errors.confirmPassword && (
+                <div className="error">{errors.confirmPassword.message}</div>
+              )}
+
+              <label
+                htmlFor="myCheckbox"
+                className="checkbox-label"
+                onClick={handleCheckboxChange}
+              >
+                <span
+                  className={` ${
+                    isChecked ? "checkbox-icon-checked" : "checkbox-icon"
+                  }`}
+                  onClick={handleCheckboxChange}
+                ></span>
+                {` ${isChecked ? "Hide password" : "Show password"}`}
+              </label>
             </div>
             <div className="register_buttons loading_animation">
-              <button className="register_box_button " type="submit" onClick={handleSubmit}>
+              <button
+                className="register_box_button "
+                type="submit"
+                onClick={handleSubmit}
+              >
                 Login
               </button>
 
-              
-              <Link to="/accounts/register" className="register_box_bottom_button">
+              <Link to="/accounts/login" className="register_box_bottom_button">
                 Already have and account ?
               </Link>
             </div>
-          </from>
+          </form>
         </div>
       </div>
     </div>
