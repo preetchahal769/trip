@@ -52,6 +52,42 @@
     transform: translateX(0);
   }
 }
+@keyframes zoomInAnimation {
+  0% {
+    transform: scale(1);
+    /* border: 2px solid  var(--slate500); */
+    color: var(--slate500);
+  }
+  50% {
+    transform: scale(0);
+    /* border: 2px solid  greenyellow; */
+    color: greenyellow;
+  }
+
+  100% {
+    transform: scale(1);
+    /* border: 2px solid  greenyellow; */
+    color: greenyellow;
+  }
+}
+@keyframes zoomOutAnimation {
+  0% {
+    transform: scale(1);
+    border: 2px solid  greenyellow;
+    color: greenyellow;
+  }
+  50% {
+    transform: scale(0);
+    border: 2px solid  var(--slate500);
+    color: var(--slate500);
+  }
+  100% {
+    transform: scale(1);
+    border: 2px solid  var(--slate500);
+    color: var(--slate500);
+   
+  }
+}
 
 * {
   margin: 0;
@@ -107,6 +143,55 @@ body {
   -webkit-box-shadow: 0 0 0 1000px var(--slate900) inset !important;
   -webkit-text-fill-color: var(--slate500) !important;
   caret-color: var(--slate500) !important;
+}
+.checkbox-label{
+  font-family: "General Sans", sans-serif;
+  font-size: var(--size-xxl);
+  padding-top: var(--size-xxs);
+  margin-top: 10px;
+  color: var(--slate500);
+  display: block; 
+}
+.checkbox-icon{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 2px solid  var(--slate500);
+  padding: 0.2rem;
+  margin-right: var(--size-xs);
+  height: 0.5rem;
+  width: 0.5rem;
+  animation: zoomOutAnimation 0.30s ease-in-out;
+}
+.checkbox-icon::before {
+  content: "✓";
+  opacity: 0;
+  animation: zoomOutAnimation 0.30s ease-in-out;
+}
+.checkbox-icon-checked{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 2px solid  greenyellow;
+  padding: 0.2rem;
+  margin-right: var(--size-xs);
+  height: 0.5rem;
+  width: 0.5rem;
+  animation: zoomInAnimation 0.30s ease-in-out;
+}
+.checkbox-icon-checked::before {
+  content: "✓";
+  opacity: 1;
+  color: greenyellow;
+  animation: zoomInAnimation 0.30s ease-in-out;
+}
+.error {
+  color: red;
+  display: block;
+  margin: 2px;
+  font-size: var(--size-xs);
 }
 /* .regsiter{
  position: relative;
