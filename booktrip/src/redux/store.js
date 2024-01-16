@@ -17,7 +17,7 @@ export * from "./error.slice";
 export const store = configureStore({
   reducer: {
     auth : authReducer,
-    error : errorReducer,
+    // error : errorReducer,  remove it in future and its file will be deleted
     shifter: pageShifter,
     balance: balanceHandler,
     slide: slideHandler,
