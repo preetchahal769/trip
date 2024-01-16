@@ -1,14 +1,19 @@
-import React from "react";
+
 import {
-  useForm,
-  yupResolver,
-   Link,
-  toast,
-  authActions,
-  useSelector,
-  useDispatch,
+  React,
   viteLogo,
+  axios,
+  useNavigate,
+  useState,
+  useEffect,
+  toast,
+  yupResolver,
+  useForm,
+  Link,
+  useDispatch,
+  useSelector
 } from "_helper";
+import{ Loader } from '_components'
 import * as Yup from "yup";
 import "react-toastify/dist/ReactToastify.css";
 import "../style/login.css";
@@ -16,6 +21,9 @@ import "../style/login.css";
 function Login() {
   const dispatch = useDispatch();
   const session = useSelector((state) => state.session.value);
+  const [loading, setLoading] = useState(true);
+  const [isChecked, setIsChecked] = useState(false);
+  const [type, setType] = useState("password");
   const toastOptions = {
     className: "custom-toast",
     position: "bottom-right",
@@ -27,7 +35,26 @@ function Login() {
     progress: undefined,
     theme: "dark",
   };
-  
+  useEffect(() => {
+    // Simulate loading delay
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, [])
+  const handleToggle = () => {
+    if (type === "password") {
+      setType("text");
+    } else {
+      setType("password");
+    }
+  };
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+
+    handleToggle();
+
+    console.log(isChecked);
+  };
   const schema = Yup.object().shape({
     userName: Yup.string().required("Username is required"),
     password: Yup.string().required("Password is required"),
@@ -52,59 +79,85 @@ function Login() {
   };
  
   return (
+    <>
+     {loading && <Loader />}
     <div className="login">
-      <form className="login_box" onSubmit={handleSubmit(onSubmit)}>
-        <div
-          className="loading_animation"
-          style={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          <img src={viteLogo} alt="" className="logo loading_animation" />
+      <div className="login_box" >
+      <div className="login_box_header loading_animation">
+          <img src={viteLogo} alt="" className="loign_box_header_img " />
+          <h3 className="login_box_header_text ">Login to Book Trip</h3>
         </div>
-        <h3 className="logoText loading_animation">Login to BookTrip</h3>
-        <input
-          type="text"
-          name="userName"
-          {...register("userName")}
-          // value={input.userName}
-          // onChange={handleChange}
-          placeholder="username"
-          className="login_box_input loading_animation"
-          autoComplete="off"
-        />
-        {errors.userName && errors.userName.message && (
-          <div className="error-message">
-            {toast.error(errors.userName.message, toastOptions)}
-          </div>
-        )}
-        <input
-          type="text"
-          name="password"
-          // value={input.password}
-          // onChange={handleChange}
-          {...register("password")}
-          placeholder="password"
-          className="login_box_input loading_animation"
-          autoComplete="off"
-        />
-        {errors.password && toast.error(errors.password.message, toastOptions)}
-        <button
-          className="login_box_button loading_animation"
-          onClick={handleSubmit}
-        >
-          Login
-        </button>
-        <div className="login_box_bottom loading_animation">
-          <button className="login_box_bottom_button">Forgot Password?</button>
-          <Link to="/accounts/register" className="login_box_bottom_button">
-            New Account
-          </Link>
+        <div className="login_box_form loading_animation">
+        <form className="login_form" onSubmit={handleSubmit(onSubmit)}>
+        <div className="login_input_container">
+              <label htmlFor="userName" className="form_input_lable">
+                Name
+              </label>
+              <input
+                type="text"
+                autoComplete="off"
+                name="userName"
+                className="form_input_box"
+                {...register("name")}
+              />
+
+              {errors.name && (
+                <div className="error">{errors.name.message}</div>
+              )}
+            </div>
+        <div className="login_input_container">
+              <label htmlFor="password" className="form_input_lable">
+               Password
+              </label>
+              <input
+                type={type}
+                autoComplete="off"
+                name="password"
+                className="form_input_box"
+                {...register("password")}
+              />
+
+              {errors.name && (
+                <div className="error">{errors.name.message}</div>
+              )}
+              <label
+                htmlFor="myCheckbox"
+                className="checkbox-label"
+                onClick={handleCheckboxChange}
+              >
+                <span
+                  className={` ${
+                    isChecked ? "checkbox-icon-checked" : "checkbox-icon"
+                  }`}
+                  onClick={handleCheckboxChange}
+                ></span>
+                {` ${isChecked ? "Hide password" : "Show password"}`}
+              </label>
+            </div>
+            <div className="login_buttons loading_animation">
+              <button
+                className="login_box_button "
+                type="submit"
+                onClick={handleSubmit}
+              >
+                Login
+              </button>
+
+             <div className="login_bottom_box">
+             <Link to="/accounts/register" className="login_box_bottom_button">
+               Forgot Password ?
+              </Link>
+              <Link to="/accounts/register" className="login_box_bottom_button">
+               New Account
+              </Link>
+             </div>
+            </div>
+        </form>
         </div>
-      </form>
+       
+      </div>
     </div>
+    </>
   );
 }
 
