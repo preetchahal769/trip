@@ -7,4 +7,5 @@ import Profile from './Profile';
 import Tours from './Tours';
 import Tickets from './Ticket';
 import PrivateRoutes from './privateRoutes';
-export {About, Balance, Filter, Header, Menu, Profile , Tours, Tickets , PrivateRoutes};
+import Loader from './loader';
+export {About, Balance, Filter, Header, Menu, Profile , Tours, Loader, Tickets , PrivateRoutes};
