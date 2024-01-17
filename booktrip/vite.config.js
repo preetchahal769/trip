@@ -11,6 +11,7 @@ export default defineConfig({
       '_components': resolve(__dirname, 'src/components/'),
       '_user': resolve(__dirname, 'src/user/'),
       '_helper': resolve(__dirname, 'src/helper/'),
+      '_api': resolve(__dirname, 'src/api/'),
     }
   },
   server: {
