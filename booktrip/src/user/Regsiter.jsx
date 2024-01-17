@@ -10,6 +10,7 @@ import {
   Link,
   useDispatch,
 } from "_helper";
+import {API} from '_api'
 import * as Yup from "yup";
 import "react-toastify/dist/ReactToastify.css";
 import "../style/regsiter.css";
@@ -82,17 +83,24 @@ function Regsiter() {
     console.log(data);
     // e.preventDefault();
     try {
-      if (input.password !== input.confirmPassword) {
-        toast.error("Password don't match", toastOptions);
-      } else {
+        const input = {
+          name: data.name,
+          userName: data.userName,
+          address: data.address,
+          phoneNo: data.phoneNo,
+          email: data.email,
+          password: data.password,
+        }
         await axios.post(`${API}/auth/signup`, input);
         toast.success("Account created successfully", toastOptions);
         navigate("/login");
-      }
+      
     } catch (error) {
-      if (!error.response.data.message) {
+      if (!error.response) {
+        console.log(error);
         toast.error(error.message, toastOptions);
       } else {
+        console.log(error);
         toast.error(error.response.data.message, toastOptions);
       }
     }
