@@ -14,7 +14,7 @@ dotenv.config();
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 // Enable CORS
-// app.use(cors());
+app.use(cors());
 app.use(cookieParser());
 // app.use((req, res, next) => {
 //   res.header('Access-Control-Allow-Origin', 'http://localhost:5173');
