@@ -101,6 +101,8 @@ export const signin = async (req, res) => {
       name: chekUser.name,
       username: chekUser.userName,
       email: chekUser.email,
+      address: chekUser.address,
+      phoneNo: chekUser.phoneNo,
     };
     const token = jwt.sign(user, secretKey, {
       expiresIn: "1d",
