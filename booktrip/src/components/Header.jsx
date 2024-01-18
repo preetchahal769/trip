@@ -64,7 +64,7 @@ function Header() {
           </svg>
         </NavLink>
          {/* Button to dispatch the tours action */}
-        <button className="header__button" onClick={() => dispatch(tours())}>
+        <NavLink to={"/tours"} className="header__button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -79,9 +79,9 @@ function Header() {
               d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z"
             />
           </svg>
-        </button>
+        </NavLink>
          {/* Button to dispatch the filter action */}
-        <button className="header__button" onClick={() => dispatch(filter())}>
+        <NavLink to={"/filter"} className="header__button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -96,9 +96,9 @@ function Header() {
               d="M6 13.5V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 9.75V10.5"
             />
           </svg>
-        </button>
+        </NavLink>
          {/* Button to dispatch the about action */}
-        <button className="header__button" onClick={() => dispatch(about())}>
+        <NavLink to={"/about"} className="header__button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -113,7 +113,7 @@ function Header() {
               d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
             />
           </svg>
-        </button>
+        </NavLink>
         <button className="header__button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
