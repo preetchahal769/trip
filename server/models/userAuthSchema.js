@@ -25,6 +25,9 @@ const userAuthSchema = new mongoose.Schema({
         type: String,
         // required: true
     },
+    balance:{
+        type:String,
+    },
     date: {
         type: Date,
         default: Date.now
