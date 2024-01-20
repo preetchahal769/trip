@@ -58,6 +58,7 @@ export const signup = async (req, res) => {
       phoneNo,
       email,
       password: hashedPassword,
+      balance: "0",
     });
 
     await newUser.save();
