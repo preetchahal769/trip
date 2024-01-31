@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "../style/balance.css";
+
 import { useSelector, useDispatch } from "react-redux";
-import { increment } from "../redux/balanceHandler";
+import { balanceActions } from "../redux/balance.slice";
 
 /**
  * Component that displays the balance and allows adding funds.
@@ -28,13 +29,20 @@ function Balance() {
    * Dispatches an action to increment the balance with the entered amount.
    
    */
-  const handleSubmit = (e) => {
+  const handleSubmit =  (e) => {
     e.preventDefault(); // to prevent default load
-    dispatch(increment(input.amount));
-    console.log(input.amount);
+    dispatch(balanceActions.add(input.amount));
+    // console.log ('dispatch',dispatch(increment(input.amount)))
+    // console.log(input.amount);
   };
+  const auth = JSON.parse(localStorage.getItem("auth"))
+  if(auth && balanceAmount === 0) {
+    
+    console.log("balance at balance.jsx", auth.balance)
+    dispatch(balanceActions.updateBalance(auth.balance));
+  }
 
-  console.log(JSON.stringify(balanceAmount));
+ 
 
   return (
     <div className="balance">
