@@ -6,6 +6,7 @@ import bodyParser from 'body-parser';
 import dbConfig from './config/dbConfig.js';  // necessary to import
 
 import authRoute from "./routes/authRoutes.js";
+import balanceRoute from "./routes/balanceRoute.js";
 import cookieParser from 'cookie-parser';
 // Load environment variables from .env file
 dotenv.config();
@@ -16,14 +17,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 // Enable CORS
 app.use(cors());
 app.use(cookieParser());
-// app.use((req, res, next) => {
-//   res.header('Access-Control-Allow-Origin', 'http://localhost:5173');
-//   res.header('Access-Control-Allow-Credentials', true);
-//   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-//   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-
-//   next();
-// });
 
 
 
@@ -33,6 +26,7 @@ app.use(cookieParser());
 // Parse request bodies as JSON
 app.use(express.json());
 app.use("/auth",  authRoute);
+app.use("/balance",  balanceRoute);
 
 // Get the port number from the environment variable, defaulting to 5000 if not set
 const PORT = process.env.PORT || 5000;
