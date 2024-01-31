@@ -26,7 +26,8 @@ const userAuthSchema = new mongoose.Schema({
         // required: true
     },
     balance:{
-        type:String,
+        type: Number,
+        default: 0
     },
     date: {
         type: Date,
