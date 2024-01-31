@@ -58,7 +58,7 @@ export const signup = async (req, res) => {
       phoneNo,
       email,
       password: hashedPassword,
-      balance: "0",
+      
     });
 
     await newUser.save();
@@ -104,6 +104,7 @@ export const signin = async (req, res) => {
       email: chekUser.email,
       address: chekUser.address,
       phoneNo: chekUser.phoneNo,
+      balance: chekUser.balance,
     };
     const token = jwt.sign(user, secretKey, {
       expiresIn: "1d",
