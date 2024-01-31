@@ -1,26 +1,24 @@
 import { configureStore } from "@reduxjs/toolkit";
+import {authReducer} from "./auth.slice";
+import { balanceReducer } from "./balance.slice.js"; // Correct path
+
 import pageShifter from "./pageShifter";
-import balanceHandler from "./balanceHandler";
 import slideHandler from "./slideHandler";
 import sessionHandler from "./sessionHandler";
-import {authReducer} from "./auth.slice";
-import { errorReducer } from "./error.slice";
 
-
-// export * from "./slice/pageShifter";
-// export * from "./slice/balanceHandler";
-// export * from "./slice/slideHandler";
-// export * from "./slice/sessionHandler";
+// Export individual reducers
 export * from "./auth.slice";
-export * from "./error.slice";
+export * from "./balance.slice";
 
+
+// Create the Redux store with the specified reducers
 export const store = configureStore({
   reducer: {
-    auth : authReducer,
-    // error : errorReducer,  remove it in future and its file will be deleted
-    shifter: pageShifter,
-    balance: balanceHandler,
-    slide: slideHandler,
-    session: sessionHandler,
+    auth : authReducer,  // Reducer for managing authentication state
+    balance : balanceReducer ,  // Reducer for managing balance state
+  
+    shifter: pageShifter,  // Page shifter utility
+    slide: slideHandler,  // Slide handler utility
+    session: sessionHandler,  // Session handler utility
   },
 });
