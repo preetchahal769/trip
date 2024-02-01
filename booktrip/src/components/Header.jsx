@@ -98,7 +98,7 @@ function Header() {
           </svg>
         </NavLink>
          {/* Button to dispatch the about action */}
-        <NavLink to={"/about"} className="header__button">
+        <NavLink to={"/aboutus"} className="header__button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
