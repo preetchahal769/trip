@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import "../style/tour.css";
 // import {Ticket} from "./"
 import { useSelector, useDispatch } from "react-redux";
-import { increment } from "../redux/slideHandler";
+
 import Tickets from "./Ticket";
 function Tours() {
-  const imageUrl = useSelector((state) => state.slide.value);
+  // const imageUrl = useSelector((state) => state.slide.value);
   const dispatch = useDispatch();
 
   const ticketList = [
@@ -157,20 +157,12 @@ function Tours() {
       by: "Train",
     },
   ];
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      // Code to be executed at each interval
-      dispatch(increment());
-    }, 4000); // Interval set to 1000 milliseconds (1 second)
-
-    // Clean up the interval on component unmount
-    return () => clearInterval(intervalId);
-  }, []);
+  
 
   return (
     <div className="tour">
-      <img src={imageUrl} alt="Tourist_place" className="slide_image" />
-      <h3 className="slide_title">Explore The India</h3>
+      <video src="http://localhost:5173/assets/vedio.webm" alt="Tourist_place" className="slide_image" autoPlay loop   />
+      
       <div className="tickets">
         {ticketList.map((ticket, index) => (
           <Tickets
