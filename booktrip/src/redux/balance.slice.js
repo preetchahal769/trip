@@ -58,8 +58,8 @@ function createAddAction() {
     `${balanceName}/add`,
     async (amount, { dispatch }) => {
       try {
-        let user = JSON.parse(localStorage.getItem("auth"));
-        let email = user.email;
+        let auth = JSON.parse(localStorage.getItem("auth"));
+        let email = auth.email;
         const balance = await axios.post(`${API}/balance/addBalance`, {
           email,
           amount,
@@ -67,9 +67,11 @@ function createAddAction() {
         console.log("balance", balance.data.updatedBalance);
         toast.success("Balance updated successfully", toastOptions);
         dispatch(balanceActions.updateBalance(balance.data.updatedBalance));
+        auth.balance = balance.data.updatedBalance;
+        localStorage.setItem("auth", JSON.stringify(auth));
       } catch (error) {
         console.log(error);
-        toast.error("Something went wrong", toastOptions);
+        toast.error(error.response.data.message, toastOptions);
       }
     }
   );
