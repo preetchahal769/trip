@@ -4,8 +4,13 @@ export const addBalance = async (req, res) => {
   console.log('api called', email, amount);
   try {
     const user = await userAuth.findOne({ email });
+    
     if (!user) {
       return res.status(404).json({ message: "User not found" });
+    }
+    if (user.balance +  parseInt(amount) === 50000 || user.balance +  parseInt(amount) > 50000) {
+     
+      return res.status(422).json({ message: "Balance cannot be greater than 100000" });
     }
   await userAuth.updateOne({ email }, { $inc: { balance: amount } } );
   const updatedUser = await userAuth.findOne({ email });
