@@ -155,7 +155,7 @@ function Profile() {
   const userDetails = JSON.parse(localStorage.getItem("auth"));
   console.log(userDetails);
   return (
-    <>
+    
       <div className="profile">
         <div className="items profile_item_1">
           <h4 className="item__title">Name</h4>
@@ -178,19 +178,8 @@ function Profile() {
           <p className="item__value">{userDetails.email}</p>
         </div>
       </div>
-      <div className="tickets">
-        {ticketList.map((ticket, index) => (
-          <Tickets
-            key={index}
-            companyName={ticket.companyName}
-            from={ticket.from}
-            to={ticket.to}
-            price={ticket.ticketPrice}
-            by={ticket.by}
-          />
-        ))}
-      </div>
-    </>
+
+
   );
 }
 
