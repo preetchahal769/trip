@@ -6,20 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="6b51e257-a623-4ac2-bcea-f3559a364e6b" name="Changes" comment="balance.jsx work completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booktrip/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/booktrip/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booktrip/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/booktrip/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booktrip/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/booktrip/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/booktrip/src/components/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/booktrip/src/components/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booktrip/src/components/Tours.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/booktrip/src/components/Tours.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booktrip/src/redux/balance.slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/booktrip/src/redux/balance.slice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booktrip/src/redux/slideHandler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/booktrip/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/booktrip/src/redux/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booktrip/src/style/tour.css" beforeDir="false" afterPath="$PROJECT_DIR$/booktrip/src/style/tour.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controller/balancecontrol.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controller/balancecontrol.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -28,6 +29,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/booktrip/src/components/Profile.jsx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -49,33 +53,19 @@
     "Node.js.index.js.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "E:/rasing underdog/trip",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Python311/Scripts/black.exe",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.externalTools",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="QodanaHighlightedReportService">
-    <option name="localRunNotPublishedPersistedInfo">
-      <LocalReportPersistedInfo>
-        <option name="path" value="C:\Users\cyber\AppData\Local\Temp\qodana_output\qodana.sarif.json" />
-        <option name="reportGuid" value="3bb872e1-99d2-4625-9b9c-12895bc11416" />
-        <option name="reportName" value="trip/qodana/2024-02-01" />
-      </LocalReportPersistedInfo>
-    </option>
-  </component>
-  <component name="QodanaIsSelectedPersistenceService">
-    <option name="selectedOrLoading" value="true" />
-  </component>
-  <component name="QodanaReportsService">
-    <option name="descriptions">
-      <ReportDescription localRun="true" path="C:\Users\cyber\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="3bb872e1-99d2-4625-9b9c-12895bc11416" reportId="trip/qodana/2024-02-01" />
-    </option>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -86,6 +76,7 @@
       <updated>1706764951943</updated>
       <workItem from="1706764953417" duration="86000" />
       <workItem from="1706765046317" duration="2491000" />
+      <workItem from="1706838200328" duration="9630000" />
     </task>
     <task id="LOCAL-00001" summary="balance.jsx work completed">
       <option name="closed" value="true" />
