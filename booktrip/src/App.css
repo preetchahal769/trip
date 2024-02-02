@@ -97,11 +97,11 @@
 
 /* For webkit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 3px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--slate900);
+  background: black;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -109,15 +109,15 @@
 }
 
 /* You can use the `:root` selector to apply it globally */
-:root {
-  scrollbar-color: var(--slate500) var(--slate500);
-}
+/*:root {*/
+/*  scrollbar-color: var(--slate500) var(--slate500);*/
+/*}*/
 
-/* Alternatively, you can target specific elements */
-/* For example, to target the body element */
-body {
-  scrollbar-color: var(--slate500) var(--slate500);
-}
+/*!* Alternatively, you can target specific elements *!*/
+/*!* For example, to target the body element *!*/
+/*body {*/
+/*  scrollbar-color: var(--slate500) var(--slate500);*/
+/*}*/
 .custom-toast {
   background-color: var(--slate900);
   
