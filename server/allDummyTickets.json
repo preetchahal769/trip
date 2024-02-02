@@ -1,0 +1,152 @@
+[
+  {
+    "ticketNumber": "TICKET-829306",
+    "from": "Delhi",
+    "to": "Ladakh",
+    "stateRailway": "Jammu and Kashmir"
+  },
+  {
+    "ticketNumber": "TICKET-809702",
+    "from": "Chandigarh",
+    "to": "Pithler Valley, Ki Monastery",
+    "stateRailway": "Himachal Pradesh"
+  },
+  {
+    "ticketNumber": "TICKET-794526",
+    "from": "Chandigarh",
+    "to": "Golden Temple",
+    "stateRailway": "Punjab"
+  },
+  {
+    "ticketNumber": "TICKET-833968",
+    "from": "Delhi",
+    "to": "Chandigarh",
+    "stateRailway": "Chandigarh"
+  },
+  {
+    "ticketNumber": "TICKET-762083",
+    "from": "Chandigarh",
+    "to": "Panchkula",
+    "stateRailway": "Haryana"
+  },
+  {
+    "ticketNumber": "TICKET-839535",
+    "from": "Agra",
+    "to": "Jama Masjid",
+    "stateRailway": "Delhi"
+  },
+  {
+    "ticketNumber": "TICKET-831457",
+    "from": "Srinagar",
+    "to": "Tulip Garden",
+    "stateRailway": "Jammu and Kashmir"
+  },
+  {
+    "ticketNumber": "TICKET-787550",
+    "from": "Delhi",
+    "to": "Jaisalmer",
+    "stateRailway": "Rajasthan"
+  },
+  {
+    "ticketNumber": "TICKET-805554",
+    "from": "Delhi",
+    "to": "Agra",
+    "stateRailway": "Uttar Pradesh"
+  },
+  {
+    "ticketNumber": "TICKET-856494",
+    "from": "Agra",
+    "to": "Taj Mahal",
+    "stateRailway": "Uttar Pradesh"
+  },
+  {
+    "ticketNumber": "TICKET-829614",
+    "from": "Patna",
+    "to": "Mandar Hill",
+    "stateRailway": "Bihar"
+  },
+  {
+    "ticketNumber": "TICKET-765619",
+    "from": "Ahmedabad",
+    "to": "Rann of Kutch",
+    "stateRailway": "Gujarat"
+  },
+  {
+    "ticketNumber": "TICKET-776786",
+    "from": "Delhi",
+    "to": "Vrindavan",
+    "stateRailway": "Uttar Pradesh"
+  },
+  {
+    "ticketNumber": "TICKET-848009",
+    "from": "Mumbai",
+    "to": "Vadra Nagar",
+    "stateRailway": "Dadra and Nagar Haveli"
+  },
+  {
+    "ticketNumber": "TICKET-825804",
+    "from": "Mumbai",
+    "to": "Rani Falls",
+    "stateRailway": "Maharashtra"
+  },
+  {
+    "ticketNumber": "TICKET-819462",
+    "from": "Mumbai",
+    "to": "Lonar Lake",
+    "stateRailway": "Maharashtra"
+  },
+  {
+    "ticketNumber": "TICKET-825008",
+    "from": "Chandigarh",
+    "to": "Billing",
+    "stateRailway": "Himachal Pradesh"
+  },
+  {
+    "ticketNumber": "TICKET-782823",
+    "from": "Jabalpur",
+    "to": "Bhedaghat",
+    "stateRailway": "Madhya Pradesh"
+  },
+  {
+    "ticketNumber": "TICKET-836445",
+    "from": "Kochi",
+    "to": "Agatti Islands",
+    "stateRailway": "Lakshadweep"
+  },
+  {
+    "ticketNumber": "TICKET-787423",
+    "from": "Chennai",
+    "to": "Pamban Bridge",
+    "stateRailway": "Tamil Nadu"
+  },
+  {
+    "ticketNumber": "TICKET-815258",
+    "from": "Chennai",
+    "to": "Pondicherry",
+    "stateRailway": "Puducherry"
+  },
+  {
+    "ticketNumber": "TICKET-816213",
+    "from": "Hyderabad",
+    "to": "Golconda Fort",
+    "stateRailway": "Telangana"
+  },
+  {
+    "ticketNumber": "TICKET-852551",
+    "from": "Hyderabad",
+    "to": "Amravati",
+    "stateRailway": "Andhra Pradesh"
+  },
+  {
+    "ticketNumber": "TICKET-819360",
+    "from": "Patna",
+    "to": "Mahabodhi Temple",
+    "stateRailway": "Bihar"
+  },
+  {
+    "ticketNumber": "TICKET-839506",
+    "from": "Bagdogra",
+    "to": "Kanchenjunga",
+    "stateRailway": "West Bengal"
+  }
+]
