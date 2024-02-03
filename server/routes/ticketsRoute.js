@@ -13,4 +13,3 @@ const router = Router();
 router.get("/getticktes", getTickets);
 
 export default router;
-32855272
