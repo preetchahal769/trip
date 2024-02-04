@@ -1,38 +1,35 @@
 import mongoose from "mongoose";
 
 const ticketAuthSchema = new mongoose.Schema({
-    name: {
+    ticketNumber: {
         type: String,
         // required: true
     },
-    userName: {
+    from: {
         type: String,
         // required: true
     },
-    address: {
+    to: {
         type: String,
         // required: true
     },
-    phoneNo: {
+    stateRailway: {
         type: String,
         // required: true
-    },
-    email: {
-        type: String,
-        // required: true
-    },
-    password: {
-        type: String,
-        // required: true
-    },
-    balance:{
-        type: Number,
-        default: 0
     },
     date: {
-        type: Date,
-        default: Date.now
-    }
+        type: String,
+        // required: true
+    },
+    time: {
+        type: String,
+        // required: true
+    },
+    price: {
+        type: Number,
+        default: 300
+        // required: true
+    },
 })
 
 const ticketAuth = mongoose.model('tickets', ticketAuthSchema);
