@@ -7,6 +7,7 @@ import dbConfig from './config/dbConfig.js';  // necessary to import
 
 import authRoute from "./routes/authRoutes.js";
 import balanceRoute from "./routes/balanceRoute.js";
+import ticketsRoute from "./routes/ticketsRoute.js";
 import cookieParser from 'cookie-parser';
 // Load environment variables from .env file
 dotenv.config();
@@ -23,7 +24,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use("/auth", authRoute);
 app.use("/balance", balanceRoute);
-app.use("/tickets", balanceRoute);
+app.use("/tickets", ticketsRoute );
 
 // Get the port number from the environment variable, defaulting to 5000 if not set
 const PORT = process.env.PORT || 5000;
