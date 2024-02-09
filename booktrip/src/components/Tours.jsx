@@ -42,6 +42,8 @@ function Tours() {
                         to={ticket.to}
                         price={ticket.price}
                         by={`indian railway`}
+                        time={ticket.time}
+                        date={ticket.date}
                     />
                 ))}
             </div>
