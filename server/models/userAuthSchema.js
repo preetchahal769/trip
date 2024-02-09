@@ -29,6 +29,31 @@ const userAuthSchema = new mongoose.Schema({
         type: Number,
         default: 0
     },
+    bookedTickets:{
+        type: [{
+            ticketNumber: {
+                type: String
+            },
+            from: {
+                type: String
+            },
+            to: {
+                type: String
+            },
+            stateRailway: {
+                type: String
+            },
+            date: {
+                type: String
+            },
+            time: {
+                type: String
+            },
+            price: {
+                type: Number
+        }}],
+        default: []
+    },
     date: {
         type: Date,
         default: Date.now
