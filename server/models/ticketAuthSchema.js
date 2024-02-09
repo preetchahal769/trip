@@ -19,10 +19,12 @@ const ticketAuthSchema = new mongoose.Schema({
     },
     date: {
         type: String,
+        default: "01/01/2023"
         // required: true
     },
     time: {
         type: String,
+        default: "10:00 AM"
         // required: true
     },
     price: {
