@@ -32,6 +32,10 @@ const ticketAuthSchema = new mongoose.Schema({
         default: 300
         // required: true
     },
+    seat : {
+        type : Number,
+        default : 10
+    }
 })
 
 const ticketAuth = mongoose.model('tickets', ticketAuthSchema);
