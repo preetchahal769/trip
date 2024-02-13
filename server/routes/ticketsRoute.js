@@ -1,7 +1,7 @@
 // route setup for user authentication (signup and login)
 
 import { Router } from "express";
-import {getTickets} from "../controller/ticketscontrol.js";
+import {getTickets , bookTicket} from "../controller/ticketscontrol.js";
 
 const router = Router();
 
@@ -11,5 +11,5 @@ const router = Router();
  */
 
 router.get("/getticktes", getTickets);
-
+router.post("/bookticket", bookTicket);
 export default router;
