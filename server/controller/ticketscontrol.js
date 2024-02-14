@@ -14,25 +14,33 @@ export const getTickets = async (req, res) => {
   }
 };
 export const bookTicket = async (req, res) => {
-  console.log(req.body);
   // Destructure email and ticket number from the request body
-  const { email, ticketNo} = req.body;
+  const { email, ticketNo } = req.body;
 
   try {
     // Find user by email
     const user = await userAuth.findOne({ email });
-    if (!user) return res.status(404).json({ message: "User not found" });
+    if (!user) return res.status(422).json({ message: "User not found" });
 
     // Find ticket by ticket number
     const ticket = await ticketAuth.findOne({ ticketNumber: ticketNo });
-    if (!ticket || ticket.seats === 0)
-      return res.status(404).json({ message: "All seats are booked" });
+    if (!ticket) return res.status(422).json({ message: "Ticket not found" });
+    if (ticket.seats === 0)
+      return res.status(422).json({ message: "All seats are booked" });
+
+    // Check if the ticket is already booked by the user
+    const exist = user.bookedTickets.includes(ticketNo.toString());
+    if (exist)
+      return res.status(422).json({ message: "Ticket already booked" });
 
     // Check user balance
     if (user.balance < ticket.price)
-      return res.status(404).json({ message: "Insufficient balance" });
-    user.bookedTickets.push(ticketNo.toString());
+      return res.status(422).json({ message: "Insufficient balance" });
+
+    // Book the ticket for the user and update user balance
+    user.bookedTickets.push(ticketNo);
     user.balance = user.balance - ticket.price;
+
     // Reduce available seats and save the ticket
     ticket.seats = ticket.seats - 1;
     await ticket.save();
