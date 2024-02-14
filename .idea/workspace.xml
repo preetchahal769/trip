@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6b51e257-a623-4ac2-bcea-f3559a364e6b" name="Changes" comment="balance.jsx work completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booktrip/src/components/Ticket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/booktrip/src/components/Ticket.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controller/ticketscontrol.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controller/ticketscontrol.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/ticketAuthSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/ticketAuthSchema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/userAuthSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/userAuthSchema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/ticketsRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/ticketsRoute.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +81,8 @@
       <workItem from="1707451552980" duration="2496000" />
       <workItem from="1707712648374" duration="620000" />
       <workItem from="1707794460513" duration="6646000" />
+      <workItem from="1707880126875" duration="1374000" />
+      <workItem from="1707885470057" duration="1896000" />
     </task>
     <task id="LOCAL-00001" summary="balance.jsx work completed">
       <option name="closed" value="true" />
