@@ -1,0 +1,325 @@
+[{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01d6"
+  },
+  "ticketNumber": "TICKET-829306",
+  "from": "Delhi",
+  "to": "Ladakh",
+  "stateRailway": "Jammu and Kashmir",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01d7"
+  },
+  "ticketNumber": "TICKET-809702",
+  "from": "Chandigarh",
+  "to": "Pithler Valley, Ki Monastery",
+  "stateRailway": "Himachal Pradesh",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01d8"
+  },
+  "ticketNumber": "TICKET-794526",
+  "from": "Chandigarh",
+  "to": "Golden Temple",
+  "stateRailway": "Punjab",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01d9"
+  },
+  "ticketNumber": "TICKET-833968",
+  "from": "Delhi",
+  "to": "Chandigarh",
+  "stateRailway": "Chandigarh",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01da"
+  },
+  "ticketNumber": "TICKET-762083",
+  "from": "Chandigarh",
+  "to": "Panchkula",
+  "stateRailway": "Haryana",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01db"
+  },
+  "ticketNumber": "TICKET-839535",
+  "from": "Agra",
+  "to": "Jama Masjid",
+  "stateRailway": "Delhi",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01dc"
+  },
+  "ticketNumber": "TICKET-831457",
+  "from": "Srinagar",
+  "to": "Tulip Garden",
+  "stateRailway": "Jammu and Kashmir",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01dd"
+  },
+  "ticketNumber": "TICKET-787550",
+  "from": "Delhi",
+  "to": "Jaisalmer",
+  "stateRailway": "Rajasthan",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01de"
+  },
+  "ticketNumber": "TICKET-805554",
+  "from": "Delhi",
+  "to": "Agra",
+  "stateRailway": "Uttar Pradesh",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01df"
+  },
+  "ticketNumber": "TICKET-856494",
+  "from": "Agra",
+  "to": "Taj Mahal",
+  "stateRailway": "Uttar Pradesh",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01e0"
+  },
+  "ticketNumber": "TICKET-829614",
+  "from": "Patna",
+  "to": "Mandar Hill",
+  "stateRailway": "Bihar",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01e1"
+  },
+  "ticketNumber": "TICKET-765619",
+  "from": "Ahmedabad",
+  "to": "Rann of Kutch",
+  "stateRailway": "Gujarat",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01e2"
+  },
+  "ticketNumber": "TICKET-776786",
+  "from": "Delhi",
+  "to": "Vrindavan",
+  "stateRailway": "Uttar Pradesh",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01e3"
+  },
+  "ticketNumber": "TICKET-848009",
+  "from": "Mumbai",
+  "to": "Vadra Nagar",
+  "stateRailway": "Dadra and Nagar Haveli",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01e4"
+  },
+  "ticketNumber": "TICKET-825804",
+  "from": "Mumbai",
+  "to": "Rani Falls",
+  "stateRailway": "Maharashtra",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01e5"
+  },
+  "ticketNumber": "TICKET-819462",
+  "from": "Mumbai",
+  "to": "Lonar Lake",
+  "stateRailway": "Maharashtra",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01e6"
+  },
+  "ticketNumber": "TICKET-825008",
+  "from": "Chandigarh",
+  "to": "Billing",
+  "stateRailway": "Himachal Pradesh",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01e7"
+  },
+  "ticketNumber": "TICKET-782823",
+  "from": "Jabalpur",
+  "to": "Bhedaghat",
+  "stateRailway": "Madhya Pradesh",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01e8"
+  },
+  "ticketNumber": "TICKET-836445",
+  "from": "Kochi",
+  "to": "Agatti Islands",
+  "stateRailway": "Lakshadweep",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01e9"
+  },
+  "ticketNumber": "TICKET-787423",
+  "from": "Chennai",
+  "to": "Pamban Bridge",
+  "stateRailway": "Tamil Nadu",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01ea"
+  },
+  "ticketNumber": "TICKET-815258",
+  "from": "Chennai",
+  "to": "Pondicherry",
+  "stateRailway": "Puducherry",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01eb"
+  },
+  "ticketNumber": "TICKET-816213",
+  "from": "Hyderabad",
+  "to": "Golconda Fort",
+  "stateRailway": "Telangana",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01ec"
+  },
+  "ticketNumber": "TICKET-852551",
+  "from": "Hyderabad",
+  "to": "Amravati",
+  "stateRailway": "Andhra Pradesh",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01ed"
+  },
+  "ticketNumber": "TICKET-819360",
+  "from": "Patna",
+  "to": "Mahabodhi Temple",
+  "stateRailway": "Bihar",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+},
+{
+  "_id": {
+    "$oid": "65bc5b99bb3110b6d05c01ee"
+  },
+  "ticketNumber": "TICKET-839506",
+  "from": "Bagdogra",
+  "to": "Kanchenjunga",
+  "stateRailway": "West Bengal",
+  "date": "01/01/2023",
+  "price": 300,
+  "seat": 10,
+  "time": "10:00 AM"
+}]
